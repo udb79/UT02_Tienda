@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="body_formulario">
+    <h1 class="h1_formulario">Formulario de información</h1>
+    <form action="formulario.php" method="post">
+        <fieldset>
+            <legend>Sus Datos</legend>
+            <p>
+                <label for="nombreyapellidos">
+                    Nombre y apellidos: 
+                    <input type="text" name="nombreyapellidos" id="nombreyapellidos" maxlength="50" autofocus>
+                </label>
+            </p>
+            <p>
+                <label for="contraseña">
+                    Contraseña: 
+                    <input type="password" name="contraseña" id="contraseña" maxlength="8">
+                </label>
+            </p>
+            <p>
+                <label for="usuario">
+                    Usuario: 
+                    <input type="text" name="usuario" id="usuario" maxlength="10" placeholder="Anónimo" disabled>
+                </label>
+            </p>
+            <p>
+                <label for="nivel">
+                    Nivel:
+                </label>
+            </p>
+            <p>
+                <label for="profesional">
+                    <input type="radio" id="profesional" name="nivel">
+                    Profesional
+                </label>
+            </p>
+            <p>
+                <label for="avanzado">
+                    <input type="radio" id="avanzado" name="nivel" checked>
+                    Avanzado
+                </label>
+            </p>
+            <p>
+                <label for="principiante">
+                    <input type="radio" id="principiante" name="nivel">
+                    Principiante
+                </label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="nacionalidad">Nacionalidad:
+                <select name="nacionalidad" id="nacionalidad">
+                    <option value="1">España</option>
+                    <option value="2">Francia</option>
+                    <option value="3">Italia</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label for="desc">
+                Descripción: 
+                <textarea name="desc" id="desc" ></textarea>
+            </label>
+        </p>
+        <p>
+            <label for="info">
+                <input type="checkbox" id="info" name="info" checked>
+                Deseo recibir información sobre novedades y ofertas
+            </label>
+        </p>
+        <p>
+            <label for="info">
+                <input type="checkbox" id="info" name="info">
+                Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+            </label>
+        </p>
+
+        <p>
+            <label for="foto">
+                Adjunar foto: 
+                <input type="file" name="foto" id="foto">
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+        </p>
+    </form>
+</body>
+</html>
