@@ -1,73 +1,90 @@
+/* Fuentes: Importo las 2 fuentes solicitadas en el ejercicio */
+
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
 
-/* página index.html */
+/* Página index.html */
 
-.body_index {
-    background-image: url("fondo.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+    .body_index {
+        background-image: url("fondo.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
 
-.h1_index {
-    font-family: "Pacifico";
-    color: #D2691E;
-    text-align: center;
-    font-size: 50px;
-}
+    /* H1: Formateo por clases para que no coincida con el h1 de la página de formulario */
 
-h2 {
-    font-family: "Caveat";
-    color: #00008B;
-    font-size: 30px;
-}
+    .h1_index {
+        font-family: "Pacifico";
+        color: #D2691E;
+        text-align: center;
+        font-size: 50px;
+    }
 
-h3 {
-    font-family: Arial;
-    color: #008B8B;
-    font-size: 25px;
-}
+    h2 {
+        font-family: "Caveat";
+        color: #00008B;
+        font-size: 30px;
+    }
 
-p, li {
-    font-family: Arial; 
-}
+    h3 {
+        font-family: Arial;
+        color: #008B8B;
+        font-size: 25px;
+    }
 
-a:visited {
-    color: grey;
-}
-a:hover {
-    font-weight: bold;
-    color: red;
-}
-a:active {
-    color: green;
-}
+    p, li {
+        font-family: Arial; 
+    }
 
-table, td, th {
-    border: 2px solid brown;
-    background-color: AntiqueWhite;
-    border-collapse: collapse;
-}
+    /* Enlaces: Los pongo por separado para que reaccionen individualmente */
 
-table {
-    width: 33%;
-    margin: auto;
-}
+    .link1:visited { color: grey; }
+    .link1:hover { font-weight: bold; color: red;}
+    .link1:active { color: green; }
 
-/* página formulario.html */
+    .link2:visited { color: grey; }
+    .link2:hover { font-weight: bold; color: red; }
+    .link2:active { color: green; }
+
+    .link3:visited { color: grey; }
+    .link3:hover { font-weight: bold; color: red; }
+    .link3:active { color: green; }
+
+    .link4:visited { color: grey; }
+    .link4:hover { font-weight: bold; color: red; }
+    .link4:active { color: green; }
+
+    /* Tabla */
+
+    table, td, th {
+        border: 2px solid brown;
+        background-color: AntiqueWhite;
+        border-collapse: collapse;
+    }
+
+    table {
+        width: 33%;
+        margin: auto;
+    }
+
+/* Página formulario.html */
 
 .body_formulario {
     background-color: AntiqueWhite;
 }
 
-.h1_formulario{
-    font-family: Arial;
-    color: brown;
-    font-size: 25px;
-}
+    /* H1: Formateo por clases para que no coincida con el h1 de la página de index */
 
-label {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-}
+    .h1_formulario{
+        font-family: Arial;
+        color: brown;
+        font-size: 25px;
+    }
+
+    /* Etiquetas */
+
+    label {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+    }
 
